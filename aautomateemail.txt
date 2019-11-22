@@ -1,0 +1,65 @@
+const argv = require('yargs').argv
+ 
+if (argv.file) {
+  console.log('fileName',argv.file);
+}
+    // function readSingleFile(evt) {
+    //   var f = evt.target.files[0]; 
+    //   if (f) {
+    //     var r = new FileReader();
+    //     r.onload = function(e) { 
+    //         var contents = e.target.result;
+    //         console.log(contents);
+    //         var lines = contents.split("\n");
+    //         var result1 = [{
+    //           name: String,
+    //           email: String
+    //         }];
+    //         var result = [];
+    //         var result1= [];
+    //         var headers=lines[0].split(",");
+    //         console.log('header'+headers);
+    //         console.log('lines'+lines);
+    //         lines.splice(0, 1);
+    //         lines.forEach(function(line) {
+    //           // var obj = {};
+    //           var currentline = line.split(',');
+    //             result1.push({
+    //               name: currentline[0],
+    //               email: currentline[1]
+    //             })
+    //         });
+    //         console.log(result1);
+    //         return result1;                         
+    //       }
+    //       r.readAsText(f);
+    //     } else { 
+    //       alert("Failed to load file");
+    //     }
+    //   }
+    //   document.getElementById('fileinput').addEventListener('change', readSingleFile);
+
+// var nodemailer = require('nodemailer');
+// // console.log('')
+// var transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//     user: 'manoj@marketcaller.com',
+//     pass: 'manoj@bitbrains'
+//   }
+// });
+
+// var mailOptions = {
+//   from: 'manoj@marketcaller.com',
+//   to: 'manoj@bitbrainstech.com',
+//   subject: 'testing',
+//   text: `hi ji`
+// };
+
+// transporter.sendMail(mailOptions, function(error, info){
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log('Email sent: ' + info.response);
+//   }
+// });
